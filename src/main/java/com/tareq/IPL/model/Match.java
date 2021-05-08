@@ -1,8 +1,11 @@
 package com.tareq.IPL.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.time.LocalDate;
-
+@Entity
 public class Match {
+    @Id
     private Long id;
     private String city;
     private LocalDate date;
