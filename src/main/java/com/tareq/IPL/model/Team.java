@@ -1,9 +1,7 @@
 package com.tareq.IPL.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
 public class Team {
@@ -14,9 +12,17 @@ public class Team {
     private Long totalMatches;
     private Long totalWins;
 
+    //latest 3-4 matches @Transient donot put in database
+
+    @Transient
+    private List<Match> matches;
+
     public Team(String teamName, Long totalMatches) {
         this.teamName = teamName;
         this.totalMatches = totalMatches;
+    }
+
+    public Team() {
     }
 
     public Long getId() {
@@ -58,5 +64,13 @@ public class Team {
                 ", totalMatches=" + totalMatches +
                 ", totalWins=" + totalWins +
                 '}';
+    }
+
+    public List<Match> getMatches() {
+        return matches;
+    }
+
+    public void setMatches(List<Match> matches) {
+        this.matches = matches;
     }
 }
