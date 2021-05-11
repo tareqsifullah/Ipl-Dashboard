@@ -10,10 +10,10 @@ function App() {
     <Router>
       <Switch>
         <Route path="/teams/:teamName/matches/:year">
-                    <MatchPage/>
+              <MatchPage/>
         </Route>
         <Route path="/teams/:teamName">
-                     <TeamPage/>
+             <TeamPage/>
         </Route>
       </Switch>
     </Router>
