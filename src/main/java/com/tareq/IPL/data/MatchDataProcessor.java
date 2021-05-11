@@ -15,9 +15,9 @@ public class MatchDataProcessor implements ItemProcessor<MatchInput, Match> {
        Match match = new Match();
        // values that are same
         match.setId(Long.parseLong(matchInput.getId()));
-        match.setCity(match.getCity());
+        match.setCity(matchInput.getCity());
         match.setDate(LocalDate.parse(matchInput.getDate()));
-        match.setPlayerOfMatch(match.getPlayerOfMatch());
+        match.setPlayerOfMatch(matchInput.getPlayer_of_match());
         match.setVenue(matchInput.getVenue());
 
         //Set team 1 and team 2 depending on the innings order
