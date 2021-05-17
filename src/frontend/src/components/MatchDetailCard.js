@@ -10,7 +10,7 @@ export const MatchDetailCard = ({teamName,match}) => {
 
   if(!match) return null;
   return (
-    <div className="{isMatchWon ? MatchDetailCard won-card : MatchDetailCard lost-card}">
+    <div className={isMatchWon ? 'MatchDetailCard won-card' : 'MatchDetailCard lost-card'}>
     <div>
 
       <span className="vs">vs</span>
