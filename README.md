@@ -11,18 +11,18 @@ The website uses this [Kaggle](https://www.kaggle.com/patrickb1912/ipl-complete-
 The website is hosted on a free [Heroku](https://ipl-application.herokuapp.com/#/) it might be slow sometimes.
 
 ## Present Implementation
-Batch processing the data's from kaggle
-Creating and querying in memeory database with Pagination
-Basic React for frontend
-Github for versioning 
-Heroku to deploy from github
+Batch processing the data's from kaggle</br>
+Creating and querying in memeory database with Pagination</br>
+Basic React for frontend</br>
+Github for versioning</br>
+Heroku to deploy from github</br>
 
 
 ## Future Implementation
 
-1 Use microservice.
-2 Android and iOS app with flutter.
-3 An admin login to input latest data
+1 Use microservice.</br>
+2 Android and iOS app with flutter.</br>
+3 An admin login to input latest data.</br>
 
 
 
